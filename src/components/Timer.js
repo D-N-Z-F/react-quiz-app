@@ -23,6 +23,7 @@ function Timer({ seconds, onTimerEnd }) {
     }, 1000);
 
     return () => clearInterval(countDown);
+    // eslint-disable-next-line
   }, [time]);
 
   return <h1>Timer: {time} seconds left</h1>;
